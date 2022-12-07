@@ -83,16 +83,16 @@ export default function RecentCommits() {
 
   useEffect(() => {
     let interval = setInterval(() => {
-      client.get('tab_commits').then((response) => {
-        let recent_commits = response?.list;
+      client.get('recent_commits').then((response) => {
+        let recent_commits = response;
         setState({
           loading: false,
           recent_commits: recent_commits,
         });
       });
     }, 15 * 60 * 1000);
-    client.get('tab_commits').then((response) => {
-      let recent_commits = response?.list;
+    client.get('recent_commits').then((response) => {
+      let recent_commits = response;
       setState({
         loading: false,
         recent_commits: recent_commits,

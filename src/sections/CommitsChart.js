@@ -17,10 +17,9 @@ export default function Commits() {
 
   useEffect(() => {
     client.get('commits').then((response) => {
-      let commits = response?.list;
+      let commits = response;
       commits.pop();
       if (commits.length > 12) {
-        //remove first length - 12 elements
         commits.splice(0, commits.length - 12);
       }
 

@@ -45,7 +45,7 @@ export default function TopContributors() {
 
   useEffect(() => {
     client.get('top_contributors').then((response) => {
-      let top_contributors = response?.list;
+      let top_contributors = response;
       setState({
         loading: false,
         top_contributors: top_contributors.slice(0, 5),

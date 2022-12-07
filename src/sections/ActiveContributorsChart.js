@@ -16,7 +16,7 @@ export default function ActiveContributors() {
 
   useEffect(() => {
     client.get('active_contributors').then((response) => {
-      let contributors = response?.list;
+      let contributors = response;
       contributors.pop();
 
       if (contributors.length > 12) {

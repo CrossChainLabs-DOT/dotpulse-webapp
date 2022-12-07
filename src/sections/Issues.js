@@ -34,9 +34,9 @@ export default function Issues() {
   const [state, setState] = useState({ loading: true, chartData: [0, 0] });
 
   useEffect(() => {
-    client.get('overview').then((overview) => {
-      let open = parseInt((overview?.issues_open) ? overview?.issues_open : 0);
-      let closed = parseInt((overview?.issues_closed) ? overview?.issues_closed : 0);
+    client.get('statistics').then((statistics) => {
+      let open = parseInt((statistics?.issues_open) ? statistics?.issues_open : 0);
+      let closed = parseInt((statistics?.issues_closed) ? statistics?.issues_closed : 0);
 
       setState({ loading: false, chartData: [open, closed] });
     });

@@ -20,17 +20,39 @@ export default function Dashboard() {
   // const theme = useTheme();
   const themeStretch = false;
 
-  const [state, setState] = useState({ loading: true, commits: '', repositories: '', contributors: '', prs: '' });
+  const [state, setState] = useState({ 
+    loading: true, 
+    commits: '',
+    new_commits_last_week: '',
+    new_commits_last_month: '',
+    repositories: '', 
+    new_repos_last_week: '',
+    new_repos_last_month: '',
+    contributors: '', 
+    new_contributors_last_week: '',
+    new_contributors_last_month: '',
+    prs: '' ,
+    new_prs_last_week: '',
+    new_prs_last_month: ''
+  });
   useEffect(() => {
     setState({ loading: true });
 
-    client.get('overview').then((overview) => {
+    client.get('statistics').then((statistics) => {
       setState({
         loading: false,
-        commits: overview.commits,
-        repositories: overview.repos,
-        contributors: overview.contributors,
-        prs: overview.prs,
+        commits: statistics.commits,
+        new_commits_last_week: statistics.new_commits_last_week,
+        new_commits_last_month: statistics.new_commits_last_month,
+        repositories: statistics.repos,
+        new_repos_last_week: statistics.new_repos_last_week,
+        new_repos_last_month: statistics.new_repos_last_month,
+        contributors: statistics.contributors,
+        new_contributors_last_week: statistics.new_contributors_last_week,
+        new_contributors_last_month: statistics.new_contributors_last_month,
+        prs: statistics.prs,
+        new_prs_last_week: statistics.new_prs_last_week,
+        new_prs_last_month: statistics.new_prs_last_month,
       })
 
     });
@@ -44,7 +66,10 @@ export default function Dashboard() {
             <CardWidget
               name='Commits'
               value={((state.commits) ? (state.commits) : 'N/A')}
-              time='++++timrads'
+              time={((state.new_commits_last_week > 0) ?
+                ('+ ' + state.new_commits_last_week) + ' then last week' :
+                (state.new_commits_last_month) ? ('+ ' + state.new_commits_last_month) + ' then last month'
+                  : '')}
             />
           </Grid>
 
@@ -52,7 +77,10 @@ export default function Dashboard() {
             <CardWidget
               name='Repositories'
               value={((state.repositories) ? (state.repositories) : 'N/A')}
-              time='++++timrads'
+              time={((state.new_repos_last_week > 0) ?
+                ('+ ' + state.new_repos_last_week) + ' then last week' :
+                (state.new_repos_last_month) ? ('+ ' + state.new_repos_last_month) + ' then last month'
+                  : '')}
             />
           </Grid>
 
@@ -60,14 +88,20 @@ export default function Dashboard() {
             <CardWidget
               name='Contributors'
               value={((state.contributors) ? (state.contributors) : 'N/A')}
-              time='++++timrads'
+              time={((state.new_contributors_last_week > 0) ?
+                ('+ ' + state.new_contributors_last_week) + ' then last week' :
+                (state.new_contributors_last_month) ? ('+ ' + state.new_contributors_last_month) + ' then last month'
+                  : '')}
             />
           </Grid>
           <Grid item xs={12} md={3}>
             <CardWidget
               name='PRs'
               value={((state.prs) ? (state.prs) : 'N/A')}
-              time='++++timrads'
+              time={((state.new_prs_last_week > 0) ?
+                ('+ ' + state.new_prs_last_week) + ' then last week' :
+                (state.new_prs_last_month) ? ('+ ' + state.new_prs_last_month) + ' then last month'
+                  : '')}
             />
           </Grid>
 
