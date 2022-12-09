@@ -7,7 +7,7 @@ import { Client } from '../utils/client';
 
 const client = new Client();
 
-export default function ActiveContributors() {
+export default function Activity() {
   const [state, setState] = useState({
     loading: true, data: [
       { name: 'Contributors', data: [] }
@@ -15,19 +15,21 @@ export default function ActiveContributors() {
   });
 
   useEffect(() => {
-    client.get('active_contributors').then((response) => {
-      let contributors = response;
-      contributors.pop();
+    client.get('activity').then((response) => {
+      let activity = response;
+      activity.pop();
 
-      if (contributors.length > 12) {
+      if (activity.length > 12) {
         //remove first length - 12 elements
-        contributors.splice(0, contributors.length - 12);
+        activity.splice(0, activity.length - 12);
       }
       let contributorsData = [];
+      let reposData = [];
       let categories = [];
 
-      contributors.forEach(item => {
+      activity.forEach(item => {
         contributorsData.push(item.active_contributors);
+        reposData.push(item.active_repos);
         categories.push(item.display_month);
       });
 
@@ -35,7 +37,8 @@ export default function ActiveContributors() {
         loading: false,
         categories: categories,
         data: [
-          { name: 'Contributors', data: contributorsData }
+          { name: 'Contributors', data: contributorsData },
+          { name: 'Repositories', data: reposData }
         ]
       });
     });
@@ -65,7 +68,7 @@ export default function ActiveContributors() {
   return (
     <Card className='boxContainer'>
       <CardHeader
-        title="Repositories"
+        title="Activity"
       />
       <Box sx={{ mt: 3, mx: 3 }} dir="ltr">
         <ReactApexChart
