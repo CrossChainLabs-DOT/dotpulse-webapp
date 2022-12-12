@@ -28,12 +28,13 @@ function CommitItem({ item }) {
       alignItems="center"
       spacing={2}
       sx={{
+        height: '5rem',
         "&:hover": {
           backgroundColor: alpha('#919EAB', 0.2)
         },
       }}
     >
-      <Box component="img" src={avatar_url} sx={{ width: 30, height: 30, borderRadius: 1.5 }} />
+      <Box component="img" src={avatar_url} sx={{ width: 30, height: 30, borderRadius: 1.5, marginLeft: '0.75rem' }} />
 
       <Box sx={{ minWidth: 240 }}>
         <Typography variant="body2" sx={{ color: 'text.primary', width: '65em' }} noWrap>
@@ -117,7 +118,7 @@ export default function RecentCommits() {
   }, [setState]);
 
   return (
-    <Card className='boxContainer' sx={{ marginTop: '2rem' }}>
+    <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
       <CardHeader title="Recent commits" />
       <Box
         sx={{
@@ -129,7 +130,7 @@ export default function RecentCommits() {
           overflowY: "scroll",
         }}
       >
-        <Stack spacing={3} sx={{ p: 3, pr: 0, pt: 2 }}>
+        <Stack sx={{ p: 3, pr: 0 }}>
           {state.recent_commits.map((item) => (
             <CommitItem key={item.commit_hash} item={item} />
           ))}

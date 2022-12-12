@@ -17,7 +17,7 @@ export default function CardWidget({ name, value, time }) {
   const theme = useTheme();
 
   return (
-    <RootStyle className='boxContainer' sx={{ marginTop: '2rem' }}>
+    <RootStyle className='boxContainer' sx={{ marginTop: '4rem' }}>
       <Card sx={{ display: 'flex', alignItems: 'center', p: 3, backgroundColor: "#DB0372" }}>
         <Box sx={{ flexGrow: 1, marginLeft: '1em' }}>
           <Typography align="left" variant="h6" color='common.white'>{name}</Typography>
