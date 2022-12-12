@@ -38,7 +38,7 @@ function CommitItem({ item }) {
 
       <Box sx={{ minWidth: 240 }}>
         <Typography variant="body2" sx={{ color: 'text.primary', width: '65em' }} noWrap>
-          {message}
+          {message.indexOf('\n') > 0 ? message?.substring(0, message.indexOf('\n')) : message}
         </Typography>
         <Stack direction="row" alignItems="center" spacing={1} justify="space-between">
           <Typography variant="subtitle2" noWrap>
