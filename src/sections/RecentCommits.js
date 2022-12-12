@@ -114,7 +114,7 @@ export default function RecentCommits() {
       isMounted = false;
       clearInterval(interval);
     };
-  }, [recentCommits]);
+  }, [setRecentCommits]);
 
   return (
     <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
