@@ -1,3 +1,4 @@
+/** @module DotPulse **/
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { fToNow } from '../utils/format';
@@ -85,13 +86,16 @@ function CommitItem({ item }) {
   );
 }
 
+/**
+ * List of recent commits.
+ */
 export default function RecentCommits() {
   const [recentCommits, setRecentCommits] = useState([]);
 
   useEffect(() => {
     let isMounted = true;
     let client = new Client();
-    
+
     let interval = setInterval(() => {
       client.get('recent_commits').then((recent_commits) => {
         if (isMounted) {

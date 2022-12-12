@@ -1,3 +1,4 @@
+/** @module DotPulse **/
 import merge from 'lodash/merge';
 import { useState, useEffect } from 'react';
 import ReactApexChart from 'react-apexcharts';
@@ -7,7 +8,10 @@ import { Client } from '../utils/client';
 
 const client = new Client();
 
-export default function Activity() {
+/**
+ * Chart that displays the number of active developers and repos for each month over the last year.
+ */
+export default function Ecosystem() {
   const [state, setState] = useState({
     loading: true, data: [
       { name: 'Contributors', data: [] }
@@ -20,7 +24,6 @@ export default function Activity() {
       activity.pop();
 
       if (activity.length > 12) {
-        //remove first length - 12 elements
         activity.splice(0, activity.length - 12);
       }
       let contributorsData = [];
@@ -67,9 +70,7 @@ export default function Activity() {
 
   return (
     <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
-      <CardHeader
-        title="Ecosystem"
-      />
+      <CardHeader title="Ecosystem"/>
       <Box sx={{ mt: 3, mx: 3 }} dir="ltr">
         <ReactApexChart
           type="line"

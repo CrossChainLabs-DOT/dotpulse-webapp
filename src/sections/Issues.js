@@ -1,3 +1,4 @@
+/** @module DotPulse **/
 import { merge } from 'lodash';
 import ReactApexChart from 'react-apexcharts';
 import { useTheme, styled } from '@mui/material/styles';
@@ -29,6 +30,9 @@ const ChartWrapperStyle = styled('div')(({ theme }) => ({
   }
 }));
 
+/**
+ * Chart that displays the number of issues.
+ */
 export default function Issues() {
   const theme = useTheme();
   const [state, setState] = useState({ loading: true, chartData: [0, 0] });

@@ -1,3 +1,4 @@
+/** @module DotPulse **/
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { Box, Stack, Card, Typography, CardHeader, Link } from '@mui/material';
@@ -38,6 +39,9 @@ function ContributorItem({ item }) {
   );
 }
 
+/**
+ * Top 10 contributors of the of the month.
+ */
 export default function TopContributors() {
   const [state, setState] = useState({
     loading: true, top_contributors: []

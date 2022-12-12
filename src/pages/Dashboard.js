@@ -11,7 +11,7 @@ import {
   CardWidget,
   TopContributors,
   Issues,
-  Activity,
+  Ecosystem,
 } from '../sections';
 
 const client = new Client();
@@ -110,7 +110,7 @@ export default function Dashboard() {
           </Grid>
 
           <Grid item xs={12} md={6} lg={8}>
-            <Activity />
+            <Ecosystem />
           </Grid>
 
           <Grid item xs={12} md={3} lg={4}>

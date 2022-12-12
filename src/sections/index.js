@@ -1,5 +1,5 @@
 export { default as Commits } from './CommitsChart';
-export { default as Activity } from './ActivityChart';
+export { default as Ecosystem } from './EcosystemChart';
 export { default as CardWidget } from './CardWidget';
 export { default as TopContributors } from './TopContributors';
 export { default as RecentCommits } from './RecentCommits';
