@@ -5,9 +5,6 @@ import { Box, Stack, Card, Typography, CardHeader, Link } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { Client } from '../utils/client';
 
-
-const client = new Client();
-
 CommitItem.propTypes = {
   item: PropTypes.shape({
     id: PropTypes.string,
@@ -89,33 +86,31 @@ function CommitItem({ item }) {
 }
 
 export default function RecentCommits() {
-  const [state, setState] = useState({
-    loading: true, recent_commits: []
-  });
+  const [recentCommits, setRecentCommits] = useState([]);
 
   useEffect(() => {
+    let isMounted = true;
+    let client = new Client();
+    
     let interval = setInterval(() => {
-      client.get('recent_commits').then((response) => {
-        let recent_commits = response;
-        setState({
-          loading: false,
-          recent_commits: recent_commits,
-        });
+      client.get('recent_commits').then((recent_commits) => {
+        if (isMounted) {
+          setRecentCommits(recent_commits);
+        }
       });
     }, 15 * 60 * 1000);
-    client.get('recent_commits').then((response) => {
-      let recent_commits = response;
-      setState({
-        loading: false,
-        recent_commits: recent_commits,
-      });
+
+    client.get('recent_commits').then((recent_commits) => {
+      if (isMounted) {
+        setRecentCommits(recent_commits);
+      }
     });
 
     return function cleanup() {
-      console.log('interval cleanup');
+      isMounted = false;
       clearInterval(interval);
     };
-  }, [setState]);
+  }, [recentCommits]);
 
   return (
     <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
@@ -131,7 +126,7 @@ export default function RecentCommits() {
         }}
       >
         <Stack sx={{ p: 3, pr: 0 }}>
-          {state.recent_commits.map((item) => (
+          {recentCommits?.map((item) => (
             <CommitItem key={item.commit_hash} item={item} />
           ))}
         </Stack>

@@ -57,21 +57,6 @@ export default function Activity() {
       colors: ["#DB0372"],
       strokeColors: '#DB0372',
     },
-    // title: {
-    //   text: 'Ecosystem',
-    //   align: 'left',
-    //   style: {
-    //     fontSize: '17px',
-    //     fontWeight: '700',
-    //     fontFamily: 'Public Sans,sans-serif',
-    //     color: '#212B36'
-    //   },
-    // },
-    // legend: {
-    //   width: 300,
-    //   position: 'top',
-    //   horizontalAlign: 'right',
-    // },
     grid: {
       borderColor: '#000000',
     },

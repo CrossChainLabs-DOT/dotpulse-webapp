@@ -13,7 +13,7 @@ const RootStyle = styled(Card)(({ theme }) => ({
   backgroundColor: palette.card,
 }));
 
-export default function CardWidget({ name, value, time }) {
+export default function CardWidget({ name, value, subtitle }) {
   const theme = useTheme();
 
   return (
@@ -21,7 +21,7 @@ export default function CardWidget({ name, value, time }) {
       <Card sx={{ display: 'flex', alignItems: 'center', p: 3, backgroundColor: "#DB0372" }}>
         <Box sx={{ flexGrow: 1, marginLeft: '1em' }}>
           <Typography align="left" variant="h6" color='common.white'>{name}</Typography>
-          <Typography align="left" variant="subtitle2" color='common.white'>{time}</Typography>
+          <Typography align="left" variant="subtitle2" color='common.white'>{subtitle}</Typography>
         </Box>
         <Typography align="right" variant="h3" color='common.white'>{value}</Typography>
       </Card>

@@ -66,7 +66,7 @@ export default function Dashboard() {
             <CardWidget
               name='Commits'
               value={((state.commits) ? (state.commits) : 'N/A')}
-              time={((state.new_commits_last_week > 0) ?
+              subtitle={((state.new_commits_last_week > 0) ?
                 ('+ ' + state.new_commits_last_week) + ' than last week' :
                 (state.new_commits_last_month) ? ('+ ' + state.new_commits_last_month) + ' then last month'
                   : '')}
@@ -77,7 +77,7 @@ export default function Dashboard() {
             <CardWidget
               name='Repositories'
               value={((state.repositories) ? (state.repositories) : 'N/A')}
-              time={((state.new_repos_last_week > 0) ?
+              subtitle={((state.new_repos_last_week > 0) ?
                 ('+ ' + state.new_repos_last_week) + ' than last week' :
                 (state.new_repos_last_month) ? ('+ ' + state.new_repos_last_month) + ' then last month'
                   : '')}
@@ -88,7 +88,7 @@ export default function Dashboard() {
             <CardWidget
               name='Contributors'
               value={((state.contributors) ? (state.contributors) : 'N/A')}
-              time={((state.new_contributors_last_week > 0) ?
+              subtitle={((state.new_contributors_last_week > 0) ?
                 ('+ ' + state.new_contributors_last_week) + ' than last week' :
                 (state.new_contributors_last_month) ? ('+ ' + state.new_contributors_last_month) + ' then last month'
                   : '')}
@@ -98,7 +98,7 @@ export default function Dashboard() {
             <CardWidget
               name='PRs'
               value={((state.prs) ? (state.prs) : 'N/A')}
-              time={((state.new_prs_last_week > 0) ?
+              subtitle={((state.new_prs_last_week > 0) ?
                 ('+ ' + state.new_prs_last_week) + ' than last week' :
                 (state.new_prs_last_month) ? ('+ ' + state.new_prs_last_month) + ' then last month'
                   : '')}
