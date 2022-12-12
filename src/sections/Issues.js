@@ -44,13 +44,13 @@ export default function Issues() {
 
   const chartOptions = merge(CustomChart(), {
     colors: [
-      "#A7829F",
+      "#E0ACC7",
       "#DB0372"
     ],
     chart: {
       width: 500
     },
-    labels: ['New', 'Active'],
+    labels: ['Open', 'Closed'],
     stroke: {
       colors: ['#FFFFFF'],
       width: 10,
@@ -86,7 +86,7 @@ export default function Issues() {
   });
 
   return (
-    <Card className='boxContainer'>
+    <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
       <CardHeader title="Issues" />
       <ChartWrapperStyle dir="ltr">
         <ReactApexChart type="donut" series={state.chartData} options={chartOptions} height={310} />

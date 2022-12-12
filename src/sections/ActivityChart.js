@@ -37,8 +37,8 @@ export default function Activity() {
         loading: false,
         categories: categories,
         data: [
-          { name: 'Contributors', data: contributorsData },
-          { name: 'Repositories', data: reposData }
+          { name: 'Active contributors', data: contributorsData },
+          { name: 'Active repositories', data: reposData }
         ]
       });
     });
@@ -48,15 +48,30 @@ export default function Activity() {
     xaxis: {
       categories: state.categories,
     },
-    colors: ["#DB0372"],
+    colors: ["#DB0372", "#E0ACC7"],
     stroke: {
       width: 2,
-      colors: ["#DB0372"],
+      colors: ["#DB0372", '#E0ACC7'],
     },
     markers: {
       colors: ["#DB0372"],
       strokeColors: '#DB0372',
     },
+    // title: {
+    //   text: 'Ecosystem',
+    //   align: 'left',
+    //   style: {
+    //     fontSize: '17px',
+    //     fontWeight: '700',
+    //     fontFamily: 'Public Sans,sans-serif',
+    //     color: '#212B36'
+    //   },
+    // },
+    // legend: {
+    //   width: 300,
+    //   position: 'top',
+    //   horizontalAlign: 'right',
+    // },
     grid: {
       borderColor: '#000000',
     },
@@ -66,9 +81,9 @@ export default function Activity() {
   });
 
   return (
-    <Card className='boxContainer'>
+    <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
       <CardHeader
-        title="Activity"
+        title="Ecosystem"
       />
       <Box sx={{ mt: 3, mx: 3 }} dir="ltr">
         <ReactApexChart

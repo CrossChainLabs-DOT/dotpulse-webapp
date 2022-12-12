@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { fToNow } from '../utils/format';
 import { Box, Stack, Card, Typography, CardHeader, Link } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import { Client } from '../utils/client';
+
 
 const client = new Client();
 
@@ -21,7 +23,16 @@ function CommitItem({ item }) {
   const { dev_name, repo, organisation, commit_hash, commit_date, avatar_url, message } = item;
 
   return (
-    <Stack direction="row" alignItems="center" spacing={2}>
+    <Stack
+      direction="row"
+      alignItems="center"
+      spacing={2}
+      sx={{
+        "&:hover": {
+          backgroundColor: alpha('#919EAB', 0.2)
+        },
+      }}
+    >
       <Box component="img" src={avatar_url} sx={{ width: 30, height: 30, borderRadius: 1.5 }} />
 
       <Box sx={{ minWidth: 240 }}>
@@ -106,8 +117,8 @@ export default function RecentCommits() {
   }, [setState]);
 
   return (
-    <Card className='boxContainer'>
-      <CardHeader title="Recent Commits" />
+    <Card className='boxContainer' sx={{ marginTop: '2rem' }}>
+      <CardHeader title="Recent commits" />
       <Box
         sx={{
           mb: 2,
@@ -118,7 +129,7 @@ export default function RecentCommits() {
           overflowY: "scroll",
         }}
       >
-        <Stack spacing={3} sx={{ p: 3, pr: 0 }}>
+        <Stack spacing={3} sx={{ p: 3, pr: 0, pt: 2 }}>
           {state.recent_commits.map((item) => (
             <CommitItem key={item.commit_hash} item={item} />
           ))}

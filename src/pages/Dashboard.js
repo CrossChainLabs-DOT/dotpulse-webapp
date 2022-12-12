@@ -20,18 +20,18 @@ export default function Dashboard() {
   // const theme = useTheme();
   const themeStretch = false;
 
-  const [state, setState] = useState({ 
-    loading: true, 
+  const [state, setState] = useState({
+    loading: true,
     commits: '',
     new_commits_last_week: '',
     new_commits_last_month: '',
-    repositories: '', 
+    repositories: '',
     new_repos_last_week: '',
     new_repos_last_month: '',
-    contributors: '', 
+    contributors: '',
     new_contributors_last_week: '',
     new_contributors_last_month: '',
-    prs: '' ,
+    prs: '',
     new_prs_last_week: '',
     new_prs_last_month: ''
   });
@@ -67,7 +67,7 @@ export default function Dashboard() {
               name='Commits'
               value={((state.commits) ? (state.commits) : 'N/A')}
               time={((state.new_commits_last_week > 0) ?
-                ('+ ' + state.new_commits_last_week) + ' then last week' :
+                ('+ ' + state.new_commits_last_week) + ' than last week' :
                 (state.new_commits_last_month) ? ('+ ' + state.new_commits_last_month) + ' then last month'
                   : '')}
             />
@@ -78,7 +78,7 @@ export default function Dashboard() {
               name='Repositories'
               value={((state.repositories) ? (state.repositories) : 'N/A')}
               time={((state.new_repos_last_week > 0) ?
-                ('+ ' + state.new_repos_last_week) + ' then last week' :
+                ('+ ' + state.new_repos_last_week) + ' than last week' :
                 (state.new_repos_last_month) ? ('+ ' + state.new_repos_last_month) + ' then last month'
                   : '')}
             />
@@ -89,7 +89,7 @@ export default function Dashboard() {
               name='Contributors'
               value={((state.contributors) ? (state.contributors) : 'N/A')}
               time={((state.new_contributors_last_week > 0) ?
-                ('+ ' + state.new_contributors_last_week) + ' then last week' :
+                ('+ ' + state.new_contributors_last_week) + ' than last week' :
                 (state.new_contributors_last_month) ? ('+ ' + state.new_contributors_last_month) + ' then last month'
                   : '')}
             />
@@ -99,7 +99,7 @@ export default function Dashboard() {
               name='PRs'
               value={((state.prs) ? (state.prs) : 'N/A')}
               time={((state.new_prs_last_week > 0) ?
-                ('+ ' + state.new_prs_last_week) + ' then last week' :
+                ('+ ' + state.new_prs_last_week) + ' than last week' :
                 (state.new_prs_last_month) ? ('+ ' + state.new_prs_last_month) + ' then last month'
                   : '')}
             />
@@ -126,9 +126,9 @@ export default function Dashboard() {
           </Grid>
 
         </Grid>
-
+        <Footer />
       </Container>
-      <Footer />
+
     </Page>
   );
 }

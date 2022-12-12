@@ -65,7 +65,7 @@ export default function Commits() {
   });
 
   return (
-    <Card className='boxContainer'>
+    <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
       <CardHeader
         title="Commits"
       />

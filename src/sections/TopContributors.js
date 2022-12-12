@@ -48,15 +48,15 @@ export default function TopContributors() {
       let top_contributors = response;
       setState({
         loading: false,
-        top_contributors: top_contributors.slice(0, 5),
+        top_contributors: top_contributors.slice(0, 10),
       });
     });
   }, [setState]);
 
   return (
-    <Card className='boxContainer'>
-      <CardHeader title="Contributors" />
-      <Stack spacing={5.37} sx={{ p: 5.4, pr: 0 }}>
+    <Card className='boxContainer' sx={{ marginTop: '3rem' }}>
+      <CardHeader title="Contributors of the month" />
+      <Stack spacing={5.37} sx={{ p: 5.4, pr: 0, height: '25.5rem', overflowY: 'scroll' }}>
         {state.top_contributors.map((item) => (
           <ContributorItem key={item.dev_name} item={item} />
         ))}

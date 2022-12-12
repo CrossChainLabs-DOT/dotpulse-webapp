@@ -53,7 +53,7 @@ export default function DashboardNavbar() {
 
   return (
     <AppBar sx={{ boxShadow: 0, bgcolor: BG_COLOR }}>
-      <ToolbarStyle disableGutters>
+      <ToolbarStyle disableGutters sx={{ height: '5em' }}>
         <Container maxWidth='xl'>
           <Grid container>
             <Grid item xs={12} md={0} />
