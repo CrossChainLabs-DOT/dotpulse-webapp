@@ -101,14 +101,14 @@ function RecentCommits() {
         if (isMounted) {
           setRecentCommits(recent_commits);
         }
-      });
+      }).catch(() => {});
     }, 15 * 60 * 1000);
 
     client.get('recent_commits').then((recent_commits) => {
       if (isMounted) {
         setRecentCommits(recent_commits);
       }
-    });
+    }).catch(() => {});
 
     return function cleanup() {
       isMounted = false;
