@@ -13,8 +13,11 @@ const client = new Client();
  */
 export default function Ecosystem() {
   const [state, setState] = useState({
-    loading: true, data: [
-      { name: 'Contributors', data: [] }
+    loading: true, 
+    categories: [],
+    data: [
+      { name: 'Active contributors', data: [] },
+      { name: 'Active repositories', data: [] }
     ]
   });
 
@@ -65,7 +68,7 @@ export default function Ecosystem() {
     },
     chart: {
       foreColor: '#000000',
-    },
+    }
   });
 
   return (

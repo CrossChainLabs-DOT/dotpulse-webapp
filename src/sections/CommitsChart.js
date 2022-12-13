@@ -13,7 +13,9 @@ const client = new Client();
  */
 export default function Commits() {
   const [state, setState] = useState({
-    loading: true, data: [
+    loading: true, 
+    categories: [],
+    data: [
       { name: 'Commits', data: [] }
     ]
   });
