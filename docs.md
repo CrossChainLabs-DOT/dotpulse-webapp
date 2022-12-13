@@ -39,7 +39,7 @@ Card that displays statistics.
 <a name="module_TopContributors..TopContributors"></a>
 
 ### TopContributors~TopContributors()
-Top 10 contributors of the of the month.
+List of top 10 contributors of the month.
 
 **Kind**: inner method of [<code>TopContributors</code>](#module_TopContributors)  
 <a name="module_CommitsChart"></a>
@@ -48,7 +48,7 @@ Top 10 contributors of the of the month.
 <a name="module_CommitsChart..Commits"></a>
 
 ### CommitsChart~Commits()
-Chart that displays the number of commits for each month over the last year.
+Bar chart that displays the number of commits for each month over the last year.
 
 **Kind**: inner method of [<code>CommitsChart</code>](#module_CommitsChart)  
 <a name="module_Issues"></a>
@@ -57,7 +57,7 @@ Chart that displays the number of commits for each month over the last year.
 <a name="module_Issues..Issues"></a>
 
 ### Issues~Issues()
-Chart that displays the number of issues.
+Pie chart that displays the number of issues.
 
 **Kind**: inner method of [<code>Issues</code>](#module_Issues)  
 <a name="module_EcosystemChart"></a>
@@ -66,7 +66,7 @@ Chart that displays the number of issues.
 <a name="module_EcosystemChart..Ecosystem"></a>
 
 ### EcosystemChart~Ecosystem()
-Chart that displays the number of active developers and repos for each month over the last year.
+Line chart that displays the number of active developers and active repositories for each month over the last year.
 
 **Kind**: inner method of [<code>EcosystemChart</code>](#module_EcosystemChart)  
 <a name="module_RecentCommits"></a>

@@ -8,7 +8,7 @@ import { Client } from '../utils/client';
 
 
 /**
- * Chart that displays the number of commits for each month over the last year.
+ * Bar chart that displays the number of commits for each month over the last year.
  */
 function Commits() {
   const [state, setState] = useState({

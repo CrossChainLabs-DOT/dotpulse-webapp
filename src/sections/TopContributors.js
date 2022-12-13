@@ -38,7 +38,7 @@ function ContributorItem({ item }) {
 }
 
 /**
- * Top 10 contributors of the of the month.
+ * List of top 10 contributors of the month.
  */
 function TopContributors() {
   const [state, setState] = useState({

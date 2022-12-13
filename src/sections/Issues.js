@@ -29,7 +29,7 @@ const ChartWrapperStyle = styled('div')(({ theme }) => ({
 }));
 
 /**
- * Chart that displays the number of issues.
+ * Pie chart that displays the number of issues.
  */
 function Issues() {
   const theme = useTheme();
