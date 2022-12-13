@@ -30,7 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --detectOpenHandles",
     "eject": "react-scripts eject",
     "docs": "jsdoc2md --template docs-template.hbs --files src/sections/CardWidget.js src/sections/TopContributors.js src/sections/CommitsChart.js src/sections/Issues.js src/sections/EcosystemChart.js src/sections/RecentCommits.js>> docs.md"
   },

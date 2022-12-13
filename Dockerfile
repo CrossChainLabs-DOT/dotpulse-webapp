@@ -7,6 +7,7 @@ COPY package-lock.json ./
 RUN npm ci
 RUN npm install react-scripts@5.0.0 -g
 COPY . ./
+COPY .env.sample .env
 RUN npm run build
 
 # production environment
