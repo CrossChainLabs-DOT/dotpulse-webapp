@@ -1,15 +1,9 @@
-/** @module DotPulse **/
+/** @module CardWidget **/
 import PropTypes from 'prop-types';
 import { useTheme, styled } from '@mui/material/styles';
 import { Box, Card, Typography, CardHeader } from '@mui/material';
 import palette from '../theme/palette';
 
-/**
- * Card that displays statistics.
- * @param {object} name - the name of the card
- * @param {object} value - the value of the card
- * @param {object} subtitle - the subtitle of the card
- */
 CardWidget.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
@@ -20,7 +14,13 @@ const RootStyle = styled(Card)(({ }) => ({
   backgroundColor: palette.card,
 }));
 
-export default function CardWidget({ name, value, subtitle }) {
+/**
+ * Card that displays statistics.
+ * @param {object} name - the name of the card
+ * @param {object} value - the value of the card
+ * @param {object} subtitle - the subtitle of the card
+ */
+function CardWidget({ name, value, subtitle }) {
   return (
     <RootStyle className='boxContainer' sx={{ marginTop: '4rem' }}>
       <Card sx={{ display: 'flex', alignItems: 'center', p: 3, backgroundColor: "#DB0372" }}>
@@ -33,3 +33,5 @@ export default function CardWidget({ name, value, subtitle }) {
     </RootStyle>
   );
 }
+
+export default CardWidget;

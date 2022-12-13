@@ -1,4 +1,4 @@
-/** @module DotPulse **/
+/** @module CommitsChart **/
 import merge from 'lodash/merge';
 import { useState, useEffect } from 'react';
 import ReactApexChart from 'react-apexcharts';
@@ -6,12 +6,11 @@ import { Card, CardHeader, Box } from '@mui/material';
 import { CustomChart } from '../components/chart';
 import { Client } from '../utils/client';
 
-const client = new Client();
 
 /**
  * Chart that displays the number of commits for each month over the last year.
  */
-export default function Commits() {
+function Commits() {
   const [state, setState] = useState({
     loading: true, 
     categories: [],
@@ -20,8 +19,9 @@ export default function Commits() {
     ]
   });
 
-
   useEffect(() => {
+    const client = new Client();
+
     client.get('commits').then((response) => {
       let commits = response;
       commits.pop();
@@ -82,3 +82,4 @@ export default function Commits() {
   );
 }
 
+export default Commits;

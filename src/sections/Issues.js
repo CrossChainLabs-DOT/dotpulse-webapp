@@ -1,4 +1,4 @@
-/** @module DotPulse **/
+/** @module Issues **/
 import { merge } from 'lodash';
 import ReactApexChart from 'react-apexcharts';
 import { useTheme, styled } from '@mui/material/styles';
@@ -11,8 +11,6 @@ import { Client } from '../utils/client';
 
 const CHART_HEIGHT = 392;
 const LEGEND_HEIGHT = 72;
-
-const client = new Client();
 
 const ChartWrapperStyle = styled('div')(({ theme }) => ({
   height: CHART_HEIGHT,
@@ -33,11 +31,12 @@ const ChartWrapperStyle = styled('div')(({ theme }) => ({
 /**
  * Chart that displays the number of issues.
  */
-export default function Issues() {
+function Issues() {
   const theme = useTheme();
   const [state, setState] = useState({ loading: true, chartData: [0, 0] });
 
   useEffect(() => {
+    const client = new Client();
     client.get('statistics').then((statistics) => {
       let open = parseInt((statistics?.issues_open) ? statistics?.issues_open : 0);
       let closed = parseInt((statistics?.issues_closed) ? statistics?.issues_closed : 0);
@@ -98,3 +97,5 @@ export default function Issues() {
     </Card>
   );
 }
+
+export default Issues;

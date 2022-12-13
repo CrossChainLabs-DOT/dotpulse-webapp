@@ -1,10 +1,8 @@
-/** @module DotPulse **/
+/** @module TopContributors **/
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { Box, Stack, Card, Typography, CardHeader, Link } from '@mui/material';
 import { Client } from '../utils/client';
-
-const client = new Client();
 
 ContributorItem.propTypes = {
   item: PropTypes.shape({
@@ -42,12 +40,13 @@ function ContributorItem({ item }) {
 /**
  * Top 10 contributors of the of the month.
  */
-export default function TopContributors() {
+function TopContributors() {
   const [state, setState] = useState({
     loading: true, top_contributors: []
   });
 
   useEffect(() => {
+    const client = new Client();
     client.get('top_contributors').then((response) => {
       let top_contributors = response;
       setState({
@@ -68,3 +67,5 @@ export default function TopContributors() {
     </Card>
   );
 }
+
+export default TopContributors;

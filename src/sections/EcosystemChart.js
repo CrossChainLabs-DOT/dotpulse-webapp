@@ -1,4 +1,4 @@
-/** @module DotPulse **/
+/** @module EcosystemChart **/
 import merge from 'lodash/merge';
 import { useState, useEffect } from 'react';
 import ReactApexChart from 'react-apexcharts';
@@ -6,12 +6,10 @@ import { Card, CardHeader, Box } from '@mui/material';
 import { CustomChart } from '../components/chart';
 import { Client } from '../utils/client';
 
-const client = new Client();
-
 /**
  * Chart that displays the number of active developers and repos for each month over the last year.
  */
-export default function Ecosystem() {
+function Ecosystem() {
   const [state, setState] = useState({
     loading: true, 
     categories: [],
@@ -22,6 +20,8 @@ export default function Ecosystem() {
   });
 
   useEffect(() => {
+    const client = new Client();
+
     client.get('activity').then((response) => {
       let activity = response;
       activity.pop();
@@ -85,4 +85,6 @@ export default function Ecosystem() {
     </Card>
   );
 }
+
+export default Ecosystem;
 

@@ -3,534 +3,81 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
+<dt><a href="#module_CardWidget">CardWidget</a></dt>
 <dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
+<dt><a href="#module_TopContributors">TopContributors</a></dt>
 <dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
+<dt><a href="#module_CommitsChart">CommitsChart</a></dt>
 <dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
+<dt><a href="#module_Issues">Issues</a></dt>
 <dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
+<dt><a href="#module_EcosystemChart">EcosystemChart</a></dt>
 <dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
-<dd></dd>
-</dl>
-
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-
-* * *
-
-&copy; 2022 CrossChain Labs# DotPulse
-
-## Modules
-
-<dl>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
-<dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
-<dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
-<dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
-<dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
-<dd></dd>
-<dt><a href="#module_DotPulse">DotPulse</a></dt>
+<dt><a href="#module_RecentCommits">RecentCommits</a></dt>
 <dd></dd>
 </dl>
 
-<a name="module_DotPulse"></a>
+<a name="module_CardWidget"></a>
 
-## DotPulse
+## CardWidget
+<a name="module_CardWidget..CardWidget"></a>
 
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
+### CardWidget~CardWidget(name, value, subtitle)
+Card that displays statistics.
 
-<a name="exp_module_DotPulse--module.exports"></a>
+**Kind**: inner method of [<code>CardWidget</code>](#module_CardWidget)  
 
-### module.exports() ⏏
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>object</code> | the name of the card |
+| value | <code>object</code> | the value of the card |
+| subtitle | <code>object</code> | the subtitle of the card |
+
+<a name="module_TopContributors"></a>
+
+## TopContributors
+<a name="module_TopContributors..TopContributors"></a>
+
+### TopContributors~TopContributors()
 Top 10 contributors of the of the month.
 
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
+**Kind**: inner method of [<code>TopContributors</code>](#module_TopContributors)  
+<a name="module_CommitsChart"></a>
 
-### module.exports() ⏏
+## CommitsChart
+<a name="module_CommitsChart..Commits"></a>
+
+### CommitsChart~Commits()
 Chart that displays the number of commits for each month over the last year.
 
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
+**Kind**: inner method of [<code>CommitsChart</code>](#module_CommitsChart)  
+<a name="module_Issues"></a>
 
-### module.exports() ⏏
+## Issues
+<a name="module_Issues..Issues"></a>
+
+### Issues~Issues()
 Chart that displays the number of issues.
 
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
+**Kind**: inner method of [<code>Issues</code>](#module_Issues)  
+<a name="module_EcosystemChart"></a>
 
-### module.exports() ⏏
+## EcosystemChart
+<a name="module_EcosystemChart..Ecosystem"></a>
+
+### EcosystemChart~Ecosystem()
 Chart that displays the number of active developers and repos for each month over the last year.
 
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
+**Kind**: inner method of [<code>EcosystemChart</code>](#module_EcosystemChart)  
+<a name="module_RecentCommits"></a>
 
-### module.exports() ⏏
+## RecentCommits
+<a name="module_RecentCommits..RecentCommits"></a>
+
+### RecentCommits~RecentCommits()
 List of recent commits.
 
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
-<a name="module_DotPulse"></a>
-
-## DotPulse
-
-* [DotPulse](#module_DotPulse)
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-    * [module.exports()](#exp_module_DotPulse--module.exports) ⏏
-
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Top 10 contributors of the of the month.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of commits for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of issues.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-Chart that displays the number of active developers and repos for each month over the last year.
-
-**Kind**: Exported function  
-<a name="exp_module_DotPulse--module.exports"></a>
-
-### module.exports() ⏏
-List of recent commits.
-
-**Kind**: Exported function  
+**Kind**: inner method of [<code>RecentCommits</code>](#module_RecentCommits)  
 
 * * *
 

@@ -1,4 +1,4 @@
-/** @module DotPulse **/
+/** @module RecentCommits **/
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { fToNow } from '../utils/format';
@@ -89,7 +89,7 @@ function CommitItem({ item }) {
 /**
  * List of recent commits.
  */
-export default function RecentCommits() {
+function RecentCommits() {
   const [recentCommits, setRecentCommits] = useState([]);
 
   useEffect(() => {
@@ -139,3 +139,5 @@ export default function RecentCommits() {
 
   );
 }
+
+export default RecentCommits;
