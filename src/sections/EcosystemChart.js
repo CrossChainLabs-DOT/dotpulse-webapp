@@ -7,7 +7,7 @@ import { CustomChart } from '../components/chart';
 import { Client } from '../utils/client';
 
 /**
- * Chart that displays the number of active developers and repos for each month over the last year.
+ * Line chart that displays the number of active developers and active repositories for each month over the last year.
  */
 function Ecosystem() {
   const [state, setState] = useState({
