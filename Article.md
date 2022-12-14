@@ -2,7 +2,7 @@
 
 **[DotPulse](https://dotpulse.app/)**
 
-Polkadot has increasingly grown the open source developer ecosystem. But since the data is scattered all over GitHub, it became difficult to track the development among different Polkadot repositories, follow their activity, monitor the contributions made by developers and check how the ecosystem evolves. 
+Polkadot has increasingly grown the open source developer ecosystem. While data is scattered all over GitHub, it became difficult to track the development among different Polkadot repositories, follow their activity, monitor the contributions made by developers and check how the ecosystem evolves. 
  
 The solution that CrossChain Labs created is addressing the problem described above and is offering clarity on the Polkadot ecosystem development. This is done by scraping the data related to different Polkadot’s organisations from GitHub and exposing it in a nicely designed dashboard.
 
