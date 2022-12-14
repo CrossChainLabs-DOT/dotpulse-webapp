@@ -1,6 +1,5 @@
-# DotPulse
+# [DotPulse](https://dotpulse.app/)
 
-**[DotPulse](https://dotpulse.app/)**
 
 Polkadot has increasingly grown the open source developer ecosystem. While data is scattered all over GitHub, it became difficult to track the development among different Polkadot repositories, follow their activity, monitor the contributions made by developers and check how the ecosystem evolves. 
  
